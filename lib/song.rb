@@ -51,7 +51,7 @@ class Song
     song = Song.new
     
     artist_name = filename.split("-")[0].strip
-    song_name = filename.split("-")[1]
+    song_name = filename.split("-")[1].strip
     binding.pry
     song.name = filename.split("-")[1] #.chomp(".mp3")
     song.artist_name = filename.split("-")
